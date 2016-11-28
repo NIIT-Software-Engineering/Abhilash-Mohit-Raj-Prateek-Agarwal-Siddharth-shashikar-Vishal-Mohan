@@ -1,0 +1,38 @@
+<!--
+  Generated template for the GatepassHome page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Gate Pass</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding padding class="view">
+
+  <ion-card *ngIf="gatepass">
+
+    <ion-card-header class="header">
+      {{gatepass.purpose}}
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-label>Gatepass Type<span class="info">Outstation</span></ion-label>
+      <ion-label>Out-time<span class="info">{{gatepass.from_time}} , {{gatepass.from_date}}</span></ion-label>
+      <ion-label>In-time<span class="info">{{gatepass.to_time}} , {{gatepass.to_date}}</span></ion-label>
+      <ion-label>Status<span class="info">{{gatepass.status}}</span></ion-label>
+    </ion-card-content>
+</ion-card>
+
+<hr>
+
+<button ion-button block outline large id="applybtn" (click)="applyGatepass()">
+  Apply New
+</button>
+
+</ion-content>

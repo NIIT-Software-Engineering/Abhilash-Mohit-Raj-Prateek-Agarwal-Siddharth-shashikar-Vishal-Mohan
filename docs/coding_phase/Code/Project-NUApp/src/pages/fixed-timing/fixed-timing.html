@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Fixed time</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+  <ion-item>
+    <ion-label>Date of Departure  <span class="values">{{fixed.depdate}}</span></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Date of Arrival <span class="values">{{fixed.arrivaldate}}</span></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Out-Time <span class="values">{{fixed.outtime}}</span></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>In-Time <span class="values">{{fixed.intime}}</span></ion-label>
+  </ion-item>
+
+</ion-list>
+<button ion-button block outline large (click)="doAlert()">
+ Send
+</button>
+
+</ion-content>

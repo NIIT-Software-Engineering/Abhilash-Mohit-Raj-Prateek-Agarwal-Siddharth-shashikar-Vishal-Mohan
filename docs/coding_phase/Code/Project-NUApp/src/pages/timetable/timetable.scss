@@ -1,0 +1,46 @@
+page-timetable {
+    .front{
+    height:50px;
+    width:5px;
+    }
+    ion-card {
+    position: relative;
+    text-align: center;
+    }
+  .content {
+    position: absolute;
+    top: 36%;
+    font-size: 15px;
+    width: 100%;
+    /*color: #01A9DB;*/
+    color: #B12A30;
+    }
+    .view{
+      background-image: url('../image/img12.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    /*.responsive
+    {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    }
+  .responsive:empty
+    {
+    top: 10%;
+    left: 4;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+    @media screen and (orientation: portrait) {
+      .responsive { max-width: 90%; }
+    }
+
+    @media screen and (orientation: landscape) {
+      .responsive { max-height: 10%; }
+    }*/
+}

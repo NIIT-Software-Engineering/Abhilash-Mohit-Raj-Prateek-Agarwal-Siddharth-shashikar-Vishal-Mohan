@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Apply New Gatepass</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class = "view">
+<button ion-button block outline large (click)="localGatepass()" id="localbtn">
+  Local
+</button>
+  <h1 class="ORtext">OR</h1>
+<button ion-button block outline large (click)="outstationGatepass()" id="outbtn">
+  Outstation
+</button>
+</ion-content>

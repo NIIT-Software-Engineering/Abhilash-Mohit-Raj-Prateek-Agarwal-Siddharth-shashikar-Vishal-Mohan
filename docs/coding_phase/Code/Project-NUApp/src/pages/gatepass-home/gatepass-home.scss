@@ -1,0 +1,43 @@
+page-gatepass-home {
+    .header{
+    color: #8C2A37;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    }
+    /*.blue-text{
+    color: #8C2A37;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    }*/
+    .info{
+    color: #8C2A37;
+    font-size: 15px;
+    padding-left: 10px;
+
+    }
+    .view{
+      background-image: url('../image/img3.jpg');
+      background-repeat: no-repeat;
+      /*background-color: papayawhip;*/
+      background-size: cover;
+    }
+    #btn{
+    position: absolute;
+    top:89%;
+    left: 0;
+    height:10%;
+    width: 100%;
+    padding-bottom:0%;
+    text-transform: uppercase;
+  }
+    /*.hor-bar{
+        height: 12px;
+        width:90%;
+        position: relative;
+        top:15%;
+        left: 5%;
+        background-color: #B12A30;;
+    }*/
+}

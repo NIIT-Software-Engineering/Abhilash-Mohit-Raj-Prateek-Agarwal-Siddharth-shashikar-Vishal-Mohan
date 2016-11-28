@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>TimeTable</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="view">
+ <ion-card *ngFor = "let i of lists" (click)="goToOtherPage(i)">
+   <div class="front" [style.backgroundColor] = "i.bgcolor"></div>
+   <div class="content">{{i.id}} <ion-badge item-right>{{i.nclass}}</ion-badge></div>
+ </ion-card>
+</ion-content>

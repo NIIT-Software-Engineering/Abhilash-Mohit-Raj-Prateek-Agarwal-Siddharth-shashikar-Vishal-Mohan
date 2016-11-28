@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Attendance</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+<!--<ion-card>
+    <div class="front" [style.backgroundColor] = "i.bgcolor"></div>
+    <ion-card-header class="header">{{courses.coursename1}}</ion-card-header>
+    <ion-card-content class="align">Attendance<span class="values">{{courses.atd1}}</span></ion-card-content>
+</ion-card>
+
+<ion-card>
+    <ion-card-header class="header">{{courses.coursename2}}</ion-card-header>
+    <ion-card-content class="align">Attendance<span class="values">{{courses.atd2}}</span></ion-card-content>
+</ion-card>
+
+<ion-card>
+    <ion-card-header class="header">{{courses.coursename3}}</ion-card-header>
+    <ion-card-content class="align">Attendance<span class="values">{{courses.atd3}}</span></ion-card-content>
+</ion-card>
+
+<ion-card>
+    <ion-card-header class="header">{{courses.coursename4}}</ion-card-header>
+    <ion-card-content class="align">Attendance<span class="values">{{courses.atd4}}</span></ion-card-content>
+</ion-card>
+
+<ion-card>
+    <ion-card-header class="header">{{courses.coursename5}}</ion-card-header>
+    <ion-card-content class="align">Attendance<span class="values">{{courses.atd5}}</span></ion-card-content>
+</ion-card>
+
+<ion-card>
+    <ion-card-header class="header">{{courses.coursename6}}</ion-card-header>
+    <ion-card-content class="align">Attendance<span class="values">{{courses.atd6}}</span></ion-card-content>
+</ion-card>-->
+
+<ion-card *ngFor = "let i of lists" (click)="goToOtherPage(i)">
+   <div class="front" [style.backgroundColor] = "i.bgcolor"></div>
+   <div class="content">{{i.id}}<br><span class="attd">{{i.nclass}}</span></div>
+ </ion-card>
+</ion-content>
+
+<!--<ion-content>
+  <ion-list>
+    <ion-item>
+      <table>
+        <tr>
+          <th class="table-header">Course</th>
+          <th class="table-header">%</th>
+        </tr>
+            <tr class="attendance-information">
+            <td>Compiler Design&nbsp;&nbsp;</td>
+            <td>92.3%</td>
+            </tr>
+            <br />
+
+            <tr class="attendance-information">
+            <td>Theory of Computation&nbsp;&nbsp;</td>
+            <td>90.31%</td>
+            </tr>
+            <br />
+
+            <tr class="attendance-information">
+            <td>Microcontroller and Mircoprocessor&nbsp;&nbsp;</td>
+            <td>100%</td>
+            </tr>
+            <br />
+
+            <tr class="attendance-information">
+            <td>Computer Networks&nbsp;&nbsp;</td>
+            <td>80.3%</td>
+            </tr>
+            <br />
+
+            <tr class="attendance-information">
+            <td>Software Engineering&nbsp;&nbsp;</td>
+            <td>65.4%</td>
+            </tr>
+            <br />
+
+            <tr class="attendance-information">
+            <td>Basics of Management&nbsp;&nbsp;</td>
+            <td>100%</td>
+            </tr>
+            <br />
+        </table>
+
+    </ion-item>
+  </ion-list>
+</ion-content>-->
+

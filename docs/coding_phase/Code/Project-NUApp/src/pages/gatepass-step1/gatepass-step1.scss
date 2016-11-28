@@ -1,0 +1,31 @@
+page-gatepass-step1 {
+  #ORtext{
+    position: absolute;
+    top:40%;
+    left: 42%;
+    text-transform: uppercase;
+    color: #8C2A37;
+    /*color: #01A9DB;*/
+    font-size: 35px;
+    padding: 5px;
+    text-align: center;
+    }
+    #localbtn{
+    position: absolute;
+    top:25%;
+    left: 0;
+    text-transform: uppercase;
+    }
+    .view{
+    background-image: url('../image/img5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    #outbtn{
+    position: absolute;
+    top:60%;
+    left: 0;
+    text-transform: uppercase;
+    }
+
+}

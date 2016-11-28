@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Local Gatepass</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class = "view">
+<button ion-button block outline large id="localbtn" (click)="fixedTiming()">
+ Fixed time
+</button>
+  <h1 class="ORtext">OR</h1>
+<button ion-button block outline large id="outbtn" (click)="variableTiming()">
+  Variable time
+</button>
+</ion-content>

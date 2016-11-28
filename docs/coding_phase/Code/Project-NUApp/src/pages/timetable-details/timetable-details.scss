@@ -1,0 +1,55 @@
+page-page5{
+    .header{
+     text-align: center;
+     font-size: 15px;
+    }
+    .big{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .course{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .time,.venue{
+        font-size: 17px;
+        font-weight: bold;
+        color: #BF242A;
+     }
+    .lec{
+        font-size: 15px;
+        font-style: italic;
+        color: #7B212D;
+    }
+    .view{
+      background-image: url('../image/img5.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    /*.responsive
+    {
+    position: absolute;
+    max-width: 90%;
+    top: 10%;
+    left: 4%;
+    }
+    .responsive:empty
+    {
+    top: 10%;
+    left: 4;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+    @media screen and (orientation: portrait) {
+      .responsive { max-width: 90%; }
+    }
+
+    @media screen and (orientation: landscape) {
+      .responsive { max-height: 10%; }
+    }*/
+}

@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Outstation Gatepass</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding *ngIf="gatepass" class = "view">
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Purpose of Visit</ion-label>
+      <ion-input type="text" [(ngModel)]="gatepass.purpose"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Destination Address</ion-label>
+      <ion-input type="text" [(ngModel)]="gatepass.destination"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Destination Contact Details</ion-label>
+      <ion-input type="text"[(ngModel)]="gatepass.destination_contact"></ion-input>
+    </ion-item>
+    <br/>
+
+    <ion-item>
+        <ion-label>Date of Departure</ion-label>
+        <ion-datetime displayFormat="YYYY MM DD" [(ngModel)]="gatepass.from_date"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Date of Arrival</ion-label>
+        <ion-datetime displayFormat="YYYY MM DD" [(ngModel)]="gatepass.to_date"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Out-Time</ion-label>
+        <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="gatepass.from_time"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>In-Time</ion-label>
+        <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="gatepass.to_time"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Visit to</ion-label>
+      <ion-select [(ngModel)]="gatepass.visit_to">
+        <ion-option value="Own residence">Own residence</ion-option>
+        <ion-option value="Relative residence">Relative residence</ion-option>
+        <ion-option value="Family residence">Family residence</ion-option>
+        <ion-option value="Others">Others</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Send Approval to ?</ion-label>
+        <ion-select [(ngModel)]="gatepass.send_approval_to">
+          <ion-option *ngFor="let name of wardens" value = {{name}}>{{name}}</ion-option>
+        </ion-select>
+      </ion-item>
+  </ion-list>
+
+  <button ion-button block outline large (click)="applyGatepass()">
+    Send
+  </button>
+</ion-content>

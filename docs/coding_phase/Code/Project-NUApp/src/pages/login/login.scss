@@ -1,0 +1,101 @@
+page-login {
+    .front{
+    height:50px;
+    width:5px;
+    }
+    ion-card {
+    position: relative;
+    text-align: center;
+    }
+    /*button{
+      padding: 0;
+      margin: 0;
+    }
+    ion-content{
+      padding: 0;
+      margin: 0;
+    }*/
+  .content {
+    position: absolute;
+    top: 36%;
+    font-size: 15px;
+    width: 100%;
+    /*color: #01A9DB;*/
+    color: #B12A30;
+    }
+    .view{
+      background-image: url('../image/img7.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .transparent {
+    background-color:rgba(0, 0, 0, 0);
+    transition:height 1s;
+    -webkit-transition:height 1s;
+    }
+    .transparent:focus {
+    height:50px;
+    font-size:16px;
+  }
+  ion-title{
+    text-align: center;
+    text-transform: capitalize;
+  }
+  #nulogo{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+  .pos{
+    position: absolute;
+    top:45%;
+    left: -1%;
+
+  }
+  .pos1{
+    position: absolute;
+    top:55%;
+    left: -1%;
+
+  }
+  #btn{
+    position: absolute;
+    top:89%;
+    left: 0;
+    height:10%;
+    width: 100%;
+    padding-bottom:0%;
+
+    text-transform: uppercase;
+  }
+  img.responsive
+  {
+    position: absolute;
+    max-width: 80%;
+    top: 20%;
+    left: 40%;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+  }
+  img.responsive:empty
+  {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (orientation: portrait) {
+    img.responsive { max-width: 90%; }
+  }
+
+  @media screen and (orientation: landscape) {
+    img.responsive { max-height: 50%; }
+  }
+}

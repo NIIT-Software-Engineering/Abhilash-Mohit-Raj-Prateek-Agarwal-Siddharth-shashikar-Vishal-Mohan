@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Library</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-searchbar></ion-searchbar>
+    <ion-card>
+      <ion-card-header class="white-text">{{book.bookname1}}</ion-card-header>
+      <ion-card-content>
+        <ion-label><strong>Issued Date</strong><span class="values">{{book.issueddate1}}</span></ion-label>
+        <ion-label><strong>Due Date</strong><span class="values">{{book.duedate1}}</span></ion-label>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header class="white-text">{{book.bookname2}}</ion-card-header>
+      <ion-card-content>
+        <ion-label><strong>Issued Date</strong><span class="values">{{book.issueddate2}}</span></ion-label>
+        <ion-label><strong>Due Date</strong><span class="values">{{book.duedate2}}</span></ion-label>
+      </ion-card-content>
+    </ion-card>
+
+  <ion-card>
+      <ion-card-header class="white-text">Fine {{book.fine}}</ion-card-header>
+      <!--<ion-label><span class="values">{{book.fine}}</span></ion-label>                        -->
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{days}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="view">
+<ion-card *ngFor = "let list of lists" class="width">
+  <ion-card-header class="header">
+    <span class="time">{{list.id}}</span><br/>
+    <span class="lec">{{list.id2}}</span><br/>
+    <span class="venue">{{list.id3}}</span>
+  </ion-card-header>
+</ion-card>
+</ion-content>
